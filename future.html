@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Future</title>
+
+	<style type="text/css">
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #f0f0f0;
+		font-family: Verdana, sans-serif;
+		height: 670px;
+		margin: 0;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 90%;
+		height: 90%;
+		max-width: 800px;
+		background-color: white;
+		padding: 30px;
+		margin: 30px;
+		border-radius: 3px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.content {
+		text-align: center;
+		margin-top: 24px;
+	}
+
+	.content1 {
+		text-align: left;
+	} 
+
+	.btns {
+		display: flex;
+		flex-direction: row;
+		margin-top: auto;
+	}
+
+	.theBtn {
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		padding: 6px;
+		margin-right: 8px;
+	}
+
+	.theBtn:hover {
+		background-color: lightblue;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Future</h1>
+		<p class="content">未來，除了將AI應用於生命監測，還可以賦予AI陪伴功能。在原本的智能手錶中加入語言處理及情感識別技術，使其能夠與老年人進行對話，滿足其情感需求。將AI的回復內容及風格設定為孫子女的角色，提醒年長者按時服藥和定期運動，且能陪伴他們玩小遊戲，進而促進年長者的記憶力。</p>
+
+		<p class="content">此系統還可以根據需求客製化語速，讓其更加貼合長者的使用習慣。此外，當長者向AI傾訴，例如提到身體某處不適或表達思念子女時，AI能即時將這些訊息傳送至子女的手機，方便子女了解並關心父母的狀況。另外，讓AI模型常常關心及對年長者示愛，使其感受到自己被需要。這些不僅能減輕年長者的孤獨感，還能有效降低老年憂鬱症的發生機率。</p>
+
+		<div class="btns">
+			<button class="theBtn" id="last">Last Page</button>
+			<button class="theBtn" id="homeBtn">Home</button>
+			<button class="theBtn" id="next">Next Page</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var home = document.getElementById("homeBtn");
+		home.addEventListener("click", backToHome);
+		function backToHome() {
+			window.location.assign("file:///Users/zhengyujie/Desktop/group4_final%20project.html");
+		}
+
+		var last = document.getElementById("last");
+		last.addEventListener("click", lastPage);
+		function lastPage() {
+			window.location.assign("file:///Users/zhengyujie/Desktop/example2.html");
+		}
+
+		var next = document.getElementById("next");
+		next.addEventListener("click", nextPage);
+		function nextPage() {
+			window.location.assign("file:///Users/zhengyujie/Desktop/reference.html");
+		}
+
+	</script>
+</body>
+</html>
